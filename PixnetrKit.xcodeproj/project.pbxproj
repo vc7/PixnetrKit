@@ -16,7 +16,7 @@
 		BF1A1B06198753DF00785BF4 /* libPixnetrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1AEE198753DF00785BF4 /* libPixnetrKit.a */; };
 		BF1A1B0C198753DF00785BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A1B0A198753DF00785BF4 /* InfoPlist.strings */; };
 		BF1A1B0E198753DF00785BF4 /* PixnetrKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */; };
-		BFCE74531988CFEC00A5160E /* PXKBootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74521988CFEC00A5160E /* PXKBootstrap.m */; };
+		BFCE74531988CFEC00A5160E /* PXKService.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74521988CFEC00A5160E /* PXKService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		BF1A1B09198753DF00785BF4 /* PixnetrKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PixnetrKitTests-Info.plist"; sourceTree = "<group>"; };
 		BF1A1B0B198753DF00785BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixnetrKitTests.m; sourceTree = "<group>"; };
-		BFCE74511988CFEC00A5160E /* PXKBootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKBootstrap.h; sourceTree = "<group>"; };
-		BFCE74521988CFEC00A5160E /* PXKBootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKBootstrap.m; sourceTree = "<group>"; };
+		BFCE74511988CFEC00A5160E /* PXKService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKService.h; sourceTree = "<group>"; };
+		BFCE74521988CFEC00A5160E /* PXKService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKService.m; sourceTree = "<group>"; };
 		DF9740A3D1B74FBA96627CB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				BF1A1AF6198753DF00785BF4 /* PixnetrKit.h */,
-				BFCE74511988CFEC00A5160E /* PXKBootstrap.h */,
-				BFCE74521988CFEC00A5160E /* PXKBootstrap.m */,
+				BFCE74511988CFEC00A5160E /* PXKService.h */,
+				BFCE74521988CFEC00A5160E /* PXKService.m */,
 				BF1A1AF4198753DF00785BF4 /* Supporting Files */,
 			);
 			path = PixnetrKit;
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFCE74531988CFEC00A5160E /* PXKBootstrap.m in Sources */,
+				BFCE74531988CFEC00A5160E /* PXKService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +374,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4686C0527D44788AE48C760 /* Pods.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(inherited)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DSTROOT = /tmp/PixnetrKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PixnetrKit/PixnetrKit-Prefix.pch";
@@ -388,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4686C0527D44788AE48C760 /* Pods.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(inherited)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DSTROOT = /tmp/PixnetrKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PixnetrKit/PixnetrKit-Prefix.pch";

@@ -6,4 +6,7 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
+
+    #import <Parse/Parse.h>
+    #import <PIXNETSDK.h>
 #endif

@@ -11,3 +11,6 @@
 // 3rd Party Services
 #import <Parse/Parse.h>
 #import <PIXNETSDK.h>
+
+// Services
+#import <PixnetrKit/PXKService.h>
