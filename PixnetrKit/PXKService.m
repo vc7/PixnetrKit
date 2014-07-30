@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Vincent Chen. All rights reserved.
 //
 
-#import <Parse/Parse.h>
+#import <Parse.h>
 #import <PIXNETSDK.h>
 
 #import "PXKService.h"
