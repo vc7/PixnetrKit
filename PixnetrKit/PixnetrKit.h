@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PixnetrKit : NSObject
-
-@end
+// 3rd Party Services
+#import <Parse/Parse.h>
+#import <PIXNETSDK.h>

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59ECD9024F384565A26E86AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9740A3D1B74FBA96627CB3 /* libPods.a */; };
 		BF1A1AF2198753DF00785BF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1AF1198753DF00785BF4 /* Foundation.framework */; };
 		BF1A1AF7198753DF00785BF4 /* PixnetrKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF1A1AF6198753DF00785BF4 /* PixnetrKit.h */; };
-		BF1A1AF9198753DF00785BF4 /* PixnetrKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1AF8198753DF00785BF4 /* PixnetrKit.m */; };
 		BF1A1B00198753DF00785BF4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1AFF198753DF00785BF4 /* XCTest.framework */; };
 		BF1A1B01198753DF00785BF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1AF1198753DF00785BF4 /* Foundation.framework */; };
 		BF1A1B03198753DF00785BF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1B02198753DF00785BF4 /* UIKit.framework */; };
 		BF1A1B06198753DF00785BF4 /* libPixnetrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1AEE198753DF00785BF4 /* libPixnetrKit.a */; };
 		BF1A1B0C198753DF00785BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A1B0A198753DF00785BF4 /* InfoPlist.strings */; };
 		BF1A1B0E198753DF00785BF4 /* PixnetrKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */; };
+		BFCE74531988CFEC00A5160E /* PXKBootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74521988CFEC00A5160E /* PXKBootstrap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +43,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A4686C0527D44788AE48C760 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BF1A1AEE198753DF00785BF4 /* libPixnetrKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPixnetrKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1A1AF1198753DF00785BF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF1A1AF5198753DF00785BF4 /* PixnetrKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PixnetrKit-Prefix.pch"; sourceTree = "<group>"; };
 		BF1A1AF6198753DF00785BF4 /* PixnetrKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PixnetrKit.h; sourceTree = "<group>"; };
-		BF1A1AF8198753DF00785BF4 /* PixnetrKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixnetrKit.m; sourceTree = "<group>"; };
 		BF1A1AFE198753DF00785BF4 /* PixnetrKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixnetrKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1A1AFF198753DF00785BF4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BF1A1B02198753DF00785BF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF1A1B09198753DF00785BF4 /* PixnetrKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PixnetrKitTests-Info.plist"; sourceTree = "<group>"; };
 		BF1A1B0B198753DF00785BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixnetrKitTests.m; sourceTree = "<group>"; };
+		BFCE74511988CFEC00A5160E /* PXKBootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKBootstrap.h; sourceTree = "<group>"; };
+		BFCE74521988CFEC00A5160E /* PXKBootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKBootstrap.m; sourceTree = "<group>"; };
+		DF9740A3D1B74FBA96627CB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1A1AF2198753DF00785BF4 /* Foundation.framework in Frameworks */,
+				59ECD9024F384565A26E86AD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				BF1A1B07198753DF00785BF4 /* PixnetrKitTests */,
 				BF1A1AF0198753DF00785BF4 /* Frameworks */,
 				BF1A1AEF198753DF00785BF4 /* Products */,
+				A4686C0527D44788AE48C760 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +109,7 @@
 				BF1A1AF1198753DF00785BF4 /* Foundation.framework */,
 				BF1A1AFF198753DF00785BF4 /* XCTest.framework */,
 				BF1A1B02198753DF00785BF4 /* UIKit.framework */,
+				DF9740A3D1B74FBA96627CB3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,7 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				BF1A1AF6198753DF00785BF4 /* PixnetrKit.h */,
-				BF1A1AF8198753DF00785BF4 /* PixnetrKit.m */,
+				BFCE74511988CFEC00A5160E /* PXKBootstrap.h */,
+				BFCE74521988CFEC00A5160E /* PXKBootstrap.m */,
 				BF1A1AF4198753DF00785BF4 /* Supporting Files */,
 			);
 			path = PixnetrKit;
@@ -150,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF1A1B11198753DF00785BF4 /* Build configuration list for PBXNativeTarget "PixnetrKit" */;
 			buildPhases = (
+				F37DC4CF8339403CAAF43052 /* Check Pods Manifest.lock */,
 				BF1A1AEA198753DF00785BF4 /* Sources */,
 				BF1A1AEB198753DF00785BF4 /* Frameworks */,
 				BF1A1AEC198753DF00785BF4 /* CopyFiles */,
+				FD2FEE985EA34888B5720DE9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +197,7 @@
 		BF1A1AE6198753DF00785BF4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PXK;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Vincent Chen";
 			};
@@ -219,12 +230,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F37DC4CF8339403CAAF43052 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2FEE985EA34888B5720DE9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF1A1AEA198753DF00785BF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF1A1AF9198753DF00785BF4 /* PixnetrKit.m in Sources */,
+				BFCE74531988CFEC00A5160E /* PXKBootstrap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +372,9 @@
 		};
 		BF1A1B12198753DF00785BF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4686C0527D44788AE48C760 /* Pods.xcconfig */;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				DSTROOT = /tmp/PixnetrKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PixnetrKit/PixnetrKit-Prefix.pch";
@@ -340,7 +386,9 @@
 		};
 		BF1A1B13198753DF00785BF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4686C0527D44788AE48C760 /* Pods.xcconfig */;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				DSTROOT = /tmp/PixnetrKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PixnetrKit/PixnetrKit-Prefix.pch";
@@ -405,6 +453,7 @@
 				BF1A1B13198753DF00785BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF1A1B14198753DF00785BF4 /* Build configuration list for PBXNativeTarget "PixnetrKitTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +462,7 @@
 				BF1A1B16198753DF00785BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
