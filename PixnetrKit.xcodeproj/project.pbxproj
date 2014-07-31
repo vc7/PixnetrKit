@@ -16,6 +16,10 @@
 		BF1A1B06198753DF00785BF4 /* libPixnetrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A1AEE198753DF00785BF4 /* libPixnetrKit.a */; };
 		BF1A1B0C198753DF00785BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A1B0A198753DF00785BF4 /* InfoPlist.strings */; };
 		BF1A1B0E198753DF00785BF4 /* PixnetrKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */; };
+		BF2E89AE198A2D4700BD00D9 /* PXKPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2E89AC198A2D4700BD00D9 /* PXKPhoto.h */; };
+		BF2E89AF198A2D4700BD00D9 /* PXKPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2E89AD198A2D4700BD00D9 /* PXKPhoto.m */; };
+		BF2E89B2198A397E00BD00D9 /* PXKURLGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2E89B0198A397E00BD00D9 /* PXKURLGenerator.h */; };
+		BF2E89B3198A397E00BD00D9 /* PXKURLGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2E89B1198A397E00BD00D9 /* PXKURLGenerator.m */; };
 		BFCE74531988CFEC00A5160E /* PXKService.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74521988CFEC00A5160E /* PXKService.m */; };
 		BFCE746A1989D3D200A5160E /* PXKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74691989D3D200A5160E /* PXKUser.m */; };
 		BFCE746D1989DCDE00A5160E /* PXKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE746C1989DCDE00A5160E /* PXKConstants.m */; };
@@ -24,6 +28,8 @@
 		BFCE74711989E43C00A5160E /* PXKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCE74681989D3D200A5160E /* PXKUser.h */; };
 		BFCE74721989E43C00A5160E /* PXKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCE746B1989DCDE00A5160E /* PXKConstants.h */; };
 		BFCE74731989E43C00A5160E /* PixnetrKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BF1A1AF5198753DF00785BF4 /* PixnetrKit-Prefix.pch */; };
+		BFCE747A198A1ECC00A5160E /* PXKAlbum.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCE7478198A1ECC00A5160E /* PXKAlbum.h */; };
+		BFCE747B198A1ECC00A5160E /* PXKAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE7479198A1ECC00A5160E /* PXKAlbum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +67,18 @@
 		BF1A1B09198753DF00785BF4 /* PixnetrKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PixnetrKitTests-Info.plist"; sourceTree = "<group>"; };
 		BF1A1B0B198753DF00785BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixnetrKitTests.m; sourceTree = "<group>"; };
+		BF2E89AC198A2D4700BD00D9 /* PXKPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKPhoto.h; sourceTree = "<group>"; };
+		BF2E89AD198A2D4700BD00D9 /* PXKPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKPhoto.m; sourceTree = "<group>"; };
+		BF2E89B0198A397E00BD00D9 /* PXKURLGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKURLGenerator.h; sourceTree = "<group>"; };
+		BF2E89B1198A397E00BD00D9 /* PXKURLGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKURLGenerator.m; sourceTree = "<group>"; };
 		BFCE74511988CFEC00A5160E /* PXKService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKService.h; sourceTree = "<group>"; };
 		BFCE74521988CFEC00A5160E /* PXKService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKService.m; sourceTree = "<group>"; };
 		BFCE74681989D3D200A5160E /* PXKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKUser.h; sourceTree = "<group>"; };
 		BFCE74691989D3D200A5160E /* PXKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKUser.m; sourceTree = "<group>"; };
 		BFCE746B1989DCDE00A5160E /* PXKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKConstants.h; sourceTree = "<group>"; };
 		BFCE746C1989DCDE00A5160E /* PXKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKConstants.m; sourceTree = "<group>"; };
+		BFCE7478198A1ECC00A5160E /* PXKAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKAlbum.h; sourceTree = "<group>"; };
+		BFCE7479198A1ECC00A5160E /* PXKAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKAlbum.m; sourceTree = "<group>"; };
 		DF9740A3D1B74FBA96627CB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,8 +145,14 @@
 				BFCE74521988CFEC00A5160E /* PXKService.m */,
 				BFCE74681989D3D200A5160E /* PXKUser.h */,
 				BFCE74691989D3D200A5160E /* PXKUser.m */,
+				BF2E89AC198A2D4700BD00D9 /* PXKPhoto.h */,
+				BF2E89AD198A2D4700BD00D9 /* PXKPhoto.m */,
+				BFCE7478198A1ECC00A5160E /* PXKAlbum.h */,
+				BFCE7479198A1ECC00A5160E /* PXKAlbum.m */,
 				BFCE746B1989DCDE00A5160E /* PXKConstants.h */,
 				BFCE746C1989DCDE00A5160E /* PXKConstants.m */,
+				BF2E89B0198A397E00BD00D9 /* PXKURLGenerator.h */,
+				BF2E89B1198A397E00BD00D9 /* PXKURLGenerator.m */,
 				BF1A1AF4198753DF00785BF4 /* Supporting Files */,
 			);
 			path = PixnetrKit;
@@ -173,8 +191,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCE747A198A1ECC00A5160E /* PXKAlbum.h in Headers */,
+				BF2E89AE198A2D4700BD00D9 /* PXKPhoto.h in Headers */,
 				BFCE746F1989E43C00A5160E /* PixnetrKit.h in Headers */,
 				BFCE74701989E43C00A5160E /* PXKService.h in Headers */,
+				BF2E89B2198A397E00BD00D9 /* PXKURLGenerator.h in Headers */,
 				BFCE74711989E43C00A5160E /* PXKUser.h in Headers */,
 				BFCE74721989E43C00A5160E /* PXKConstants.h in Headers */,
 				BFCE74731989E43C00A5160E /* PixnetrKit-Prefix.pch in Headers */,
@@ -300,7 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCE746D1989DCDE00A5160E /* PXKConstants.m in Sources */,
+				BFCE747B198A1ECC00A5160E /* PXKAlbum.m in Sources */,
 				BFCE746A1989D3D200A5160E /* PXKUser.m in Sources */,
+				BF2E89B3198A397E00BD00D9 /* PXKURLGenerator.m in Sources */,
+				BF2E89AF198A2D4700BD00D9 /* PXKPhoto.m in Sources */,
 				BFCE74531988CFEC00A5160E /* PXKService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
