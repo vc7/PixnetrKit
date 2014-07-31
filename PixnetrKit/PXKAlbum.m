@@ -13,8 +13,6 @@
 
 @implementation PXKAlbum
 
-@synthesize previewImageURLString = _previewImageURLString;
-
 + (void)fetchHotAlbumsWithCategoryIDs:(NSArray *)categoryIds page:(NSUInteger)page perPage:(NSUInteger)perPage resultBlock:(PXKArrayResultBlock)block
 {
     [[PIXNETSDK sharedInstance] getMainpageAlbumsWithCategoryIDs:@[@"25"] albumType:PIXMainpageTypeHot page:page perPage:perPage strictFilter:1 completion:^(BOOL succeed, id result, NSError *error) {
