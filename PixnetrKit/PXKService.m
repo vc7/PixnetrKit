@@ -11,6 +11,7 @@
 
 #import "PXKService.h"
 #import "PXKUser.h"
+#import "PXKPhoto.h"
 
 @implementation PXKService
 
@@ -28,6 +29,7 @@
 + (void)setParseApplicationId:(NSString *)applicationId clientKey:(NSString *)clientKey
 {
     [PXKUser registerSubclass];
+    [PXKPhoto registerSubclass];
     
     [Parse setApplicationId:applicationId clientKey:clientKey];
     [PFFacebookUtils initializeFacebook];
