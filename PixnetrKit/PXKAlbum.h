@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSString *author;
 @property (nonatomic) NSInteger categoryId;
 @property (strong, nonatomic) NSString *categoryName;
+@property (nonatomic) NSUInteger photosCount;
 
 - (NSString *)previewImageURLString;
 

@@ -41,6 +41,7 @@
         self.author = [[dictionary objectForKey:@"user"] objectForKey:@"name"];
         self.categoryId = [[dictionary objectForKey:@"category_id"] integerValue];
         self.categoryName = [dictionary objectForKey:@"category"];
+        self.photosCount = [[dictionary objectForKey:@"total_pictures"] integerValue];
     }
     return self;
 }
