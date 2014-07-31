@@ -15,7 +15,7 @@
 
 + (void)fetchHotAlbumsWithCategoryIDs:(NSArray *)categoryIds page:(NSUInteger)page perPage:(NSUInteger)perPage resultBlock:(PXKArrayResultBlock)block
 {
-    [[PIXNETSDK sharedInstance] getMainpageAlbumsWithCategoryIDs:@[@"25"] albumType:PIXMainpageTypeHot page:page perPage:perPage strictFilter:1 completion:^(BOOL succeed, id result, NSError *error) {
+    [[PIXNETSDK sharedInstance] getMainpageAlbumsWithCategoryIDs:categoryIds albumType:PIXMainpageTypeHot page:page perPage:perPage strictFilter:1 completion:^(BOOL succeed, id result, NSError *error) {
         
         if (succeed) {
             __block NSMutableArray *albumArray = [NSMutableArray array];
@@ -38,6 +38,7 @@
     if (self) {
         self.objectId = [[dictionary objectForKey:@"id"] integerValue];
         self.title = [dictionary objectForKey:@"title"];
+        self.author = [[dictionary objectForKey:@"user"] objectForKey:@"name"];
         self.categoryId = [[dictionary objectForKey:@"category_id"] integerValue];
         self.categoryName = [dictionary objectForKey:@"category"];
     }
