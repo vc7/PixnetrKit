@@ -13,5 +13,6 @@
 @interface PXKURLGenerator : NSObject
 
 + (NSString *)generateAlbumPreviewImageURLStringWithAlbum:(PXKAlbum *)album size:(CGSize)size;
++ (NSString *)generateAvatarImageURLStringWithUsername:(NSString *)username size:(CGSize)size;
 
 @end
