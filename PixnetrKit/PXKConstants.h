@@ -10,4 +10,5 @@
 
 @class PXKUser;
 
+typedef void (^PXKArrayResultBlock)(NSArray *array, NSError *error);
 typedef void (^PXKUserResultBlock)(PXKUser *user, NSError *error);
