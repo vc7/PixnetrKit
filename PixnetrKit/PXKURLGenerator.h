@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @class PXKAlbum;
+@class PXKPhoto;
 
 @interface PXKURLGenerator : NSObject
 
 + (NSString *)generateAlbumPreviewImageURLStringWithAlbum:(PXKAlbum *)album size:(CGSize)size;
 + (NSString *)generateAvatarImageURLStringWithUsername:(NSString *)username size:(CGSize)size;
++ (NSString *)generatePhotoImageURLStringWithPhoto:(PXKPhoto *)photo size:(CGSize)size;
 
 @end
