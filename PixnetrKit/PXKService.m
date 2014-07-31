@@ -10,17 +10,46 @@
 #import <PIXNETSDK.h>
 
 #import "PXKService.h"
+#import "PXKUser.h"
 
 @implementation PXKService
 
++ (id)sharedService
+{
+    static PXKService *sharedTheService = nil;
+    @synchronized(self) {
+        if (sharedTheService == nil) {
+            sharedTheService = [[self alloc] init];
+        }
+    }
+    return sharedTheService;
+}
+
 + (void)setParseApplicationId:(NSString *)applicationId clientKey:(NSString *)clientKey
 {
+    [PXKUser registerSubclass];
+    
     [Parse setApplicationId:applicationId clientKey:clientKey];
+    [PFFacebookUtils initializeFacebook];
 }
 
 + (void)setPixnetConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret callbackURL:(NSString *)callbackURL
 {
     [PIXNETSDK setConsumerKey:consumerKey consumerSecret:consumerSecret callbackURL:callbackURL];
 }
+
+#pragma mark - Facebook Handlers
++ (BOOL)handleFBOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication
+{
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+}
+
++ (void)handleFBDidBecomeActive
+{
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+}
+
 
 @end
