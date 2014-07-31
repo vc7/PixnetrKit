@@ -36,7 +36,11 @@
                 NSArray *photoElements = [result objectForKey:@"elements"];
                 
                 [photoElements enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                    [photosArray addObject:[[PXKPhoto alloc] initWithDictionary:obj]];
+                    
+                    PXKPhoto *photo = [[PXKPhoto alloc] initWithDictionary:obj];
+                    photo.author = album.author;
+                    
+                    [photosArray addObject:photo];
                 }];
                 
                 block(photosArray, nil);

@@ -18,6 +18,7 @@
 + (void)fetchPhotosWithAlbum:(PXKAlbum *)album page:(NSUInteger)page perPage:(NSUInteger)perPage resultBlock:(PXKArrayResultBlock)block;
 
 @property (strong) NSString *title;
+@property (strong) NSString *author;
 @property (strong) NSString *pixnetId;
 @property (strong) NSString *pixnetIdentifier;
 @property (strong) NSNumber *photoRatio;
