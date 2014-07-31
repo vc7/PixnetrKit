@@ -17,6 +17,13 @@
 		BF1A1B0C198753DF00785BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1A1B0A198753DF00785BF4 /* InfoPlist.strings */; };
 		BF1A1B0E198753DF00785BF4 /* PixnetrKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */; };
 		BFCE74531988CFEC00A5160E /* PXKService.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74521988CFEC00A5160E /* PXKService.m */; };
+		BFCE746A1989D3D200A5160E /* PXKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE74691989D3D200A5160E /* PXKUser.m */; };
+		BFCE746D1989DCDE00A5160E /* PXKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE746C1989DCDE00A5160E /* PXKConstants.m */; };
+		BFCE746F1989E43C00A5160E /* PixnetrKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1A1AF6198753DF00785BF4 /* PixnetrKit.h */; };
+		BFCE74701989E43C00A5160E /* PXKService.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCE74511988CFEC00A5160E /* PXKService.h */; };
+		BFCE74711989E43C00A5160E /* PXKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCE74681989D3D200A5160E /* PXKUser.h */; };
+		BFCE74721989E43C00A5160E /* PXKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCE746B1989DCDE00A5160E /* PXKConstants.h */; };
+		BFCE74731989E43C00A5160E /* PixnetrKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BF1A1AF5198753DF00785BF4 /* PixnetrKit-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,10 @@
 		BF1A1B0D198753DF00785BF4 /* PixnetrKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixnetrKitTests.m; sourceTree = "<group>"; };
 		BFCE74511988CFEC00A5160E /* PXKService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKService.h; sourceTree = "<group>"; };
 		BFCE74521988CFEC00A5160E /* PXKService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKService.m; sourceTree = "<group>"; };
+		BFCE74681989D3D200A5160E /* PXKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKUser.h; sourceTree = "<group>"; };
+		BFCE74691989D3D200A5160E /* PXKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKUser.m; sourceTree = "<group>"; };
+		BFCE746B1989DCDE00A5160E /* PXKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXKConstants.h; sourceTree = "<group>"; };
+		BFCE746C1989DCDE00A5160E /* PXKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXKConstants.m; sourceTree = "<group>"; };
 		DF9740A3D1B74FBA96627CB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +131,10 @@
 				BF1A1AF6198753DF00785BF4 /* PixnetrKit.h */,
 				BFCE74511988CFEC00A5160E /* PXKService.h */,
 				BFCE74521988CFEC00A5160E /* PXKService.m */,
+				BFCE74681989D3D200A5160E /* PXKUser.h */,
+				BFCE74691989D3D200A5160E /* PXKUser.m */,
+				BFCE746B1989DCDE00A5160E /* PXKConstants.h */,
+				BFCE746C1989DCDE00A5160E /* PXKConstants.m */,
 				BF1A1AF4198753DF00785BF4 /* Supporting Files */,
 			);
 			path = PixnetrKit;
@@ -153,6 +168,21 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BFCE746E1989E42000A5160E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCE746F1989E43C00A5160E /* PixnetrKit.h in Headers */,
+				BFCE74701989E43C00A5160E /* PXKService.h in Headers */,
+				BFCE74711989E43C00A5160E /* PXKUser.h in Headers */,
+				BFCE74721989E43C00A5160E /* PXKConstants.h in Headers */,
+				BFCE74731989E43C00A5160E /* PixnetrKit-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		BF1A1AED198753DF00785BF4 /* PixnetrKit */ = {
 			isa = PBXNativeTarget;
@@ -163,6 +193,7 @@
 				BF1A1AEB198753DF00785BF4 /* Frameworks */,
 				BF1A1AEC198753DF00785BF4 /* CopyFiles */,
 				FD2FEE985EA34888B5720DE9 /* Copy Pods Resources */,
+				BFCE746E1989E42000A5160E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -268,6 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCE746D1989DCDE00A5160E /* PXKConstants.m in Sources */,
+				BFCE746A1989D3D200A5160E /* PXKUser.m in Sources */,
 				BFCE74531988CFEC00A5160E /* PXKService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
