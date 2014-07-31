@@ -21,7 +21,7 @@ static NSString *avatarTemplateString = @"http://s.pimg.tw/avatar/%@/0/0/zoomcro
 
 + (NSString *)generateAvatarImageURLStringWithUsername:(NSString *)username size:(CGSize)size
 {
-    return [NSString stringWithFormat:albumPreviewTemplateString, username, size.width, size.height];
+    return [NSString stringWithFormat:avatarTemplateString, username, size.width, size.height];
 }
 
 @end
