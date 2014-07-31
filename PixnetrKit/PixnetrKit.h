@@ -15,6 +15,7 @@
 // Services
 #import <PixnetrKit/PXKService.h>
 #import <PixnetrKit/PXKUser.h>
+#import <PixnetrKit/PXKPhoto.h>
 #import <PixnetrKit/PXKAlbum.h>
 #import <PixnetrKit/PXKConstants.h>
 #import <PixnetrKit/PXKURLGenerator.h>
